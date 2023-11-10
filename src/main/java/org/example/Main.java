@@ -10,7 +10,7 @@ public class Main {
 
         StringBuilder prefix = new StringBuilder();
         TrieNode node = trie.getRoot();
-        while (node != null && node.children.size() == 1) {
+        while (node != null && node.children.getSize() == 1) {
             char nextChar = node.children.keySet().iterator().next();
             prefix.append(nextChar);
             node = node.children.get(nextChar);
